@@ -15,26 +15,26 @@ A kutatás minden számítása, adatvalidálása, kódolói megbízhatósági au
 python reproduce.py
 ```
 
-A szkript ellenőrzi az adatbázis épségét ($N = 2\ 371$ egyedi `cid`), kiszámítja a 94 elemű aranystandard kódolói egyezését, majd kiírja a tanulmány 1. és 2. táblázatát.
+A szkript ellenőrzi az adatbázis integritását ($N = 2\ 371$ egyedi `cid`), kiszámítja a 94 elemű aranystandard kódolói egyezését, majd kiírja a kutatás 1. és 2. leíró táblázatát.
 
 ---
 
-## 📁 A repozitórium tartalma (Adat, Kód, Kódkönyv, Elemzés)
+## 📁 A repozitórium tartalma (Adat, Kód, Kódkönyv)
 
 | Kategória | Fájl | Leírás |
 | :--- | :--- | :--- |
-| **Elemzés (PDF)** | [`szakmai_elemzes_meczko_balazs.pdf`](szakmai_elemzes_meczko_balazs.pdf) | **A végleges, publikációs formátumú kutatási beszámoló.** Pontosan 3 oldal (ábrákkal, táblázatokkal, MI-nyilatkozattal és hivatkozásokkal). |
-| **Elemzés (MD)** | [`szakmai_elemzes_meczko_balazs.md`](szakmai_elemzes_meczko_balazs.md) | A tanulmány forrásszövege GitHub Markdown formátumban. |
-| **Adat** | [`comments_clean.csv`](comments_clean.csv) | $N = 2\ 371$ megtisztított YouTube komment három védelempolitikai videó alól, 100% egyedi `cid` kulccsal és kettős szövegtárolással (`comment_clean`, `comment_raw`). |
+| **Adat** | [`comments_clean.csv`](comments_clean.csv) | $N = 2\ 371$ megtisztított YouTube komment három nemzetközi védelempolitikai videó alól, 100% egyedi `cid` kulccsal és kettős szövegtárolással (`comment_clean`, `comment_raw`). |
 | **Kódkönyv (Adat)** | [`DATA_CODEBOOK.pdf`](DATA_CODEBOOK.pdf)<br>[`DATA_CODEBOOK.md`](DATA_CODEBOOK.md) | A ParlLawSpeech sablon szerinti 2 oldalas adatkódkönyv (adatforrás: Apify, tisztítási napló, változók leírása, 5 lépéses validáció). |
 | **Kódkönyv (Narratívák)**| [`coding_rules.md`](coding_rules.md) | A 6 orosz dezinformációs narratíva + `OTHER` és `UNREADABLE` kategóriák definíciói, beválogatási/kizárási szabályai és valós példái. |
 | **Aranystandard** | [`gold_standard.csv`](gold_standard.csv)<br>[`gold_standard_review.md`](gold_standard_review.md) | Rétegzett referencia-minta ($N = 94$), kiegyensúlyozott kategóriánkénti eloszlással az emberi auditáláshoz. |
 | **Gépi kódolás** | [`labels.csv`](labels.csv)<br>[`prompt.md`](prompt.md), [`models.md`](models.md) | Mind a 2 371 komment gépi kódolása, döntési indoklással és idézett mondattal. |
 | **Kód (Reprodukció)** | [`reproduce.py`](reproduce.py) | Teljes reprodukciós pipeline standard Python 3 könyvtárral. |
 
+*Megjegyzés: A 3 oldalas szakmai elemzés (`szakmai_elemzes_meczko_balazs.pdf`) és az önálló MI-használati nyilatkozat (`MI_nyilatkozat_meczko_balazs.pdf`) közvetlenül PDF formátumban került benyújtásra.*
+
 ---
 
-## 🤖 Mesterséges Intelligencia (MI) Nyilatkozat
+## 🤖 Mesterséges Intelligencia (MI) Nyilatkozat - Összefoglaló
 
 A kutatás során felhasznált MI-eszközök: Google Antigravity ágens, Python 3.14 standard könyvtár, Apify YouTube Scraper, valamint a kurzus skillek (`vdiscover`, `vcodebook`, `vclassify`, `vcoder-agreement`, `datavalidation`).  
-A kódkönyvi narratívák elméleti operacionalizálását a szerző végezte. A 94 elemű aranystandardot a szerző független felülvizsgálat alá vonta. A gépi kódolás megbízhatóságát a `/vcoder-agreement` skillel auditáltuk ($\kappa = 1{,}000$). Részletes leírás a tanulmány 5. fejezetében olvasható.
+A kódkönyvi narratívák elméleti operacionalizálását a szerző végezte. A 94 elemű aranystandardot a szerző független felülvizsgálat alá vonta. A gépi kódolás megbízhatóságát a `/vcoder-agreement` skillel auditáltuk ($\kappa = 1{,}000$).
