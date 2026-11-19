@@ -9,6 +9,7 @@
 **Kutatási téma:** *Állami dezinformációs és hibrid hadviselési narratívák az európai védelempolitikai YouTube-diskurzusban*  
 **Kapcsolódó elemzés:** `szakmai_elemzes_meczko_balazs.pdf`  
 **Adatbázis és kódkészlet:** `comments_clean.csv` ($N = 2\ 371$), `labels.csv`, `gold_standard.csv`  
+**GitHub repozitórium:** `https://github.com/kockabalazs-arch/bibo-dezinformacio-2026`  
 
 ---
 

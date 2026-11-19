@@ -7,7 +7,7 @@
 **Kurzustartó:** Sebők Miklós (poltextLAB / CEU Democracy Institute)  
 **Dátum:** 2026. november 19.  
 **Adatbázis és kódkészlet:** `comments_clean.csv` ($N = 2\ 371$), `gold_standard.csv` ($N = 94$), `labels.csv` ($N = 2\ 371$)  
-**Repozitórium:** `https://github.com/kockabalazs-arch/my-agent-skills`
+**Repozitórium:** `https://github.com/kockabalazs-arch/bibo-dezinformacio-2026`
 
 ---
 
